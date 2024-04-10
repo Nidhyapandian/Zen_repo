@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nginxcontainer:
+    image: custom
+    ports:
+      - 9000:80
+    volumes:
+      - nginxvol:/var/opt/nginx
+volumes:
+  nginxvol :
