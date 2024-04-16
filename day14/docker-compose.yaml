@@ -1,0 +1,51 @@
+version: '3'
+services: 
+  container1:
+    build:
+      context: .
+      dockerfile: Dockerfile1
+    image: container1
+    container_name: container1
+    ports:
+      - 8000:80
+    restart: always
+#*******************************
+  container2:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    image: container2
+    container_name: container2
+    ports:
+      - 7000:80
+    restart: always
+#*****************************
+  container3:
+    build:
+      context: .
+      dockerfile: Dockerfile3
+    image: container3
+    container_name: container3
+    ports:
+      - 9000:80
+    restart: always
+#********************************
+  container4:
+    build:
+      context: .
+      dockerfile: Dockerfile4
+    image: container4
+    container_name: container4
+    ports:
+      - 9090:80
+    restart: always
+#********************************
+  container5:
+    build:
+      context: .
+      dockerfile: Dockerfile5
+    image: container5
+    container_name: container5
+    ports:
+      - 5000:80
+    restart: always
